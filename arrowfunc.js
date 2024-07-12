@@ -11,6 +11,7 @@ var student = {
         }, 1000);
 
 
+
         setTimeout(() => {
             console.log("arrow function", this.studentName); //student object
         }, 3000);
@@ -18,3 +19,4 @@ var student = {
 };
 
 student.getStudentName();
+
