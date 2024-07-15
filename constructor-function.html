@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>Constructor Function</h4>
+    <script>
+      function Student(a, b, c)
+      {
+        this.studentid = a;
+        this.studentname = b;
+        this.marks = c;
+
+        this.result = function()
+        {
+          if (this.marks >= 35)
+          {
+            return "Pass";
+          }
+          else
+          {
+            return "Fail";
+          }
+        };
+      }
+
+      var s = new Student(101, "Scott", 80);
+      s.email = "scott@gmail.com";
+      console.log(s);
+      console.log(s.studentid);
+      console.log(s.studentname);
+      console.log(s.marks);
+      console.log(s.result());
+
+      var s2 = new Student(102, "Smith", 25);
+      console.log(s2);
+      console.log(s2.studentid);
+      console.log(s2.studentname);
+      console.log(s2.marks);
+      console.log(s2.result());
+
+      var k = Object.keys(s);
+      console.log(k);
+      for (var i = 0; i < k.length; i++)
+      {
+        console.log(s[k[i]]);
+      }
+    </script>
+  </body>
+</html>
+
