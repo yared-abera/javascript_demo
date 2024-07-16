@@ -8,7 +8,11 @@ var products = [
 ];
 
 var firstExpensiveProduct = products.find((p) => {
+
   return p.price >= 2000
-});
+
+}
+);
 
 console.log(firstExpensiveProduct);
+
