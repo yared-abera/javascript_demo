@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>change - checkbox</h4>
+    <h5>New Bank Account</h5>
+    <input type="checkbox" id="chk1">
+    <label for="chk1">Cheque book facility</label><br>
+    Minimum Balance: <input type="text" id="txt1" readonly="readonly">
+    <script>
+      document.getElementById("chk1").addEventListener("change", sample);
+      function sample()
+      {
+        var a = document.getElementById("chk1").checked;
+        if (a == true)
+        {
+          document.getElementById("txt1").value = "5000";
+        }
+        else
+        {
+          document.getElementById("txt1").value = "1000";
+        }
+      }
+    </script>
+  </body>
+</html>
+
