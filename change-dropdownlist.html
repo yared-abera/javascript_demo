@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>change - dropdownlist</h4>
+    <h5>New Bank Account</h5>
+    <select id="drp1">
+      <option value="0">--Please Select--</option>
+      <option value="1">Savings account</option>
+      <option value="2">Current account</option>
+      <option value="3">Loan account</option>
+    </select>
+    <br>
+    Minimum Balance: <input type="text" id="txt1" readonly="readonly">
+    <script>
+      document.getElementById("drp1").addEventListener("change", sample1);
+      function sample1()
+      {
+        var s = document.getElementById("drp1").value;
+        if (s == 1)
+        {
+          document.getElementById("txt1").value = "5000";
+        }
+        else if (s == 2)
+        {
+          document.getElementById("txt1").value = "10000";
+        }
+        else if (s == 3)
+        {
+          document.getElementById("txt1").value = "20000";
+        }
+        else
+        {
+          document.getElementById("txt1").value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
+
