@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>change - radio button</h4>
+    <h5>New Bank Account</h5>
+    <input type="radio" name="bankaccounttype" id="rb1">Savings account
+    <input type="radio" name="bankaccounttype" id="rb2">Current account
+    <input type="radio" name="bankaccounttype" id="rb3">Loan account
+    <br>
+    Minimum Balance: <input type="text" id="txt1" readonly="readonly">
+    <script>
+      document.getElementById("rb1").addEventListener("change", sample1);
+      function sample1()
+      {
+        document.getElementById("txt1").value = "5000";
+      }
+
+      document.getElementById("rb2").addEventListener("change", sample2);
+      function sample2()
+      {
+        document.getElementById("txt1").value = "10000";
+      }
+
+      document.getElementById("rb3").addEventListener("change", sample3);
+      function sample3()
+      {
+        document.getElementById("txt1").value = "20000";
+      }
+    </script>
+  </body>
+</html>
+
