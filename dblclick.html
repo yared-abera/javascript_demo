@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+      #div1
+      {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>dblclick</h4>
+    <div id="div1">div 1</div>
+    <script>
+      document.getElementById("div1").addEventListener("dblclick", sample);
+      function sample()
+      {
+        document.getElementById("div1").innerHTML = "dblclicked 1 at " + new Date().toLocaleTimeString();
+        document.getElementById("div1").style.backgroundColor = "lightgreen";
+      }
+    </script>
+  </body>
+</html>
+
+
