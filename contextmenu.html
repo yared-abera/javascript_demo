@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>contextmenu</h4>
+    <p id="p1">para 1</p>
+    <script>
+      document.addEventListener("contextmenu", sample);
+      function sample(event)
+      {
+        event.preventDefault();
+        alert("right click not allowed");
+        console.log("contextmenu " + new Date().toLocaleTimeString());
+      }
+    </script>
+  </body>
+</html>
+
