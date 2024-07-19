@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+      #div1
+      {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>click - realtime task</h4>
+    <form>
+      Price: <input type="text" id="txt1"><br>
+      Tax: <input type="text" id="txt2"><br>
+      <input type="button" value="Calculate" id="button1"><br>
+      Net Price: <input type="text" id="txt3"><br>
+    </form>
+    <script>
+      document.getElementById("button1").addEventListener("click", sample);
+      var c = 0;
+      function sample()
+      {
+        c++;
+        console.log(c);
+        var price = Number( document.getElementById("txt1").value );
+        var tax = Number( document.getElementById("txt2").value );
+        var netPrice = price + tax;
+        document.getElementById("txt3").value = netPrice;
+      }
+    </script>
+  </body>
+</html>
+
+
