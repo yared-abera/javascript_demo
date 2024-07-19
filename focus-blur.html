@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+      #span1
+      {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>focus and blur</h4>
+    email: <input type="text" id="txt1">
+    <span id="span1">Use gmail only</span>
+    <script>
+      document.getElementById("txt1").addEventListener("focus", sample1);
+      function sample1()
+      {
+        document.getElementById("span1").style.display = "inline";
+      }
+
+      document.getElementById("txt1").addEventListener("blur", sample2);
+      function sample2()
+      {
+        document.getElementById("span1").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+
