@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>createElement and appendChild</h4>
+    <div id="div1">
+      <p id="p1">para 1</p>
+      <p id="p2">para 2</p>
+      <p id="p3">para 3</p>
+      <p id="p4">para 4</p>
+    </div>
+    <script>
+      var newpara = document.createElement("p");
+      newpara.innerHTML = "para 5";
+      newpara.style.backgroundColor = "lightgreen";
+      //document.getElementById("div1").appendChild(newpara);
+      var p3 = document.getElementById("p3");
+      document.getElementById("div1").insertBefore(newpara, p3);
+    </script>
+  </body>
+</html>
+
+
