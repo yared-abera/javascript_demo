@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>change - textbox</h4>
+    Country: <input type="text" id="txt1"><br>
+    <span id="span1"></span>
+    <script>
+      document.getElementById("txt1").addEventListener("change", sample);
+      function sample()
+      {
+        var s = "You are from " + document.getElementById("txt1").value;
+        document.getElementById("span1").innerHTML = s;
+      }
+    </script>
+  </body>
+</html>
+
