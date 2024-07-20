@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>tagName</h4>
+    <p id="p1">para <span>span 1</span> <b>bold</b> 1</p>
+    <p id="p2">March</p>
+    <p id="p3">para 3</p>
+    <p class="class1" id="p4">para 4</p>
+    <p class="class1">para 5</p>
+    <p>para 6</p>
+    <script>
+      console.log( document.getElementById("p1").tagName );
+      console.log( document.getElementById("p1").id );
+      console.log( document.getElementById("p1").innerHTML );
+      console.log( document.getElementById("p1").innerText );
+      document.getElementById("p2").innerHTML = "April";
+
+      var mycolors = [ "lightgreen", "lightblue", "pink" ];
+      document.getElementById("p2").style.backgroundColor = mycolors[0];
+      document.getElementById("p3").style.backgroundColor = mycolors[1];
+      document.getElementById("p4").style.backgroundColor = mycolors[2];
+      document.getElementById("p4").style.fontSize = 30;
+    </script>
+  </body>
+</html>
+
+
