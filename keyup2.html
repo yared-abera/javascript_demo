@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>keyup 2</h4>
+    Price: <input type="text" id="txt1"><br>
+    Discount: <input type="text" id="txt2" disabled="disabled"><br>
+    <script>
+      document.getElementById("txt1").addEventListener("keyup", sample);
+      function sample()
+      {
+        var price = Number( document.getElementById("txt1").value );
+        var discount = price * 10 / 100;
+        document.getElementById("txt2").value = discount;
+      }
+    </script>
+  </body>
+</html>
+
+
