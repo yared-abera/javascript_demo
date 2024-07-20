@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+      img
+      {
+        margin: 2px;
+        cursor: pointer;
+      }
+      .class1
+      {
+        border: 4px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>click - realtime task 2</h4>
+    <img src="book1.jpg" width="70px" >
+    <img src="book2.jpg" width="70px">
+    <img src="book3.jpg" width="70px">
+    <img src="book4.jpg" width="70px">
+    <img src="book5.jpg" width="70px">
+    <br>
+    <input type="button" value="Buy Now" id="button1">
+    <script>
+      var allBooks = [
+        { bookImage: "book1.jpg", price: 10 },
+        { bookImage: "book2.jpg", price: 7 },
+        { bookImage: "book3.jpg", price: 4 },
+        { bookImage: "book4.jpg", price: 12 },
+        { bookImage: "book5.jpg", price: 3 },
+      ];
+
+      var imageTags = document.getElementsByTagName("img");
+      for (var i = 0; i< imageTags.length; i++)
+      {
+        imageTags[i].addEventListener("click", sample);
+      }
+      function sample(event)
+      {
+        event.target.setAttribute("class", "class1");
+      }
+
+      document.getElementById("button1").addEventListener("click", sample2);
+      function sample2()
+      {
+        var totalPrice = 0;
+        var selectedBookTags = document.getElementsByClassName("class1");
+        console.log(selectedBookTags);
+        for (i = 0; i < selectedBookTags.length; i++)
+        {
+          var currentImageSrc = selectedBookTags[i].getAttribute("src");
+          for (j = 0; j < allBooks.length; j++)
+          {
+            if (currentImageSrc == allBooks[j].bookImage)
+            {
+              totalPrice = totalPrice + allBooks[j].price;
+            }
+          }
+        }
+        console.log(totalPrice);
+      }
+    </script>
+  </body>
+</html>
+
+
