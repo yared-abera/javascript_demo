@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>cut copy paste</h4>
+    <input type="text" value="1234">
+    <input type="text" value="abcd">
+    <script>
+      document.addEventListener("cut", sample1);
+      function sample1(event)
+      {
+        event.preventDefault();
+        alert("cut not allowed");
+        console.log("cut " + new Date().toLocaleTimeString());
+      }
+
+      document.addEventListener("copy", sample2);
+      function sample2(event)
+      {
+        event.preventDefault();
+        alert("copy not allowed");
+        console.log("copy " + new Date().toLocaleTimeString());
+      }
+
+      document.addEventListener("paste", sample3);
+      function sample3(event)
+      {
+        event.preventDefault();
+        alert("paste not allowed");
+        console.log("paste " + new Date().toLocaleTimeString());
+      }
+    </script>
+  </body>
+</html>
+
