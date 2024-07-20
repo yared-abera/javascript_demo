@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+      #div1
+      {
+        background-color: skyblue;
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>mousemove</h4>
+    <div id="div1">div 1</div>
+    <script>
+      document.getElementById("div1").addEventListener("mousemove", sample1);
+      function sample1(event)
+      {
+        //console.log("mousemove " + new Date().getTime());
+        console.log(event.pageX + ", " + event.pageY);
+      }
+    </script>
+  </body>
+</html>
+
+
