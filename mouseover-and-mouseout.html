@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+      #div1
+      {
+        background-color: skyblue;
+        width: 300px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>mouseover, mouseout</h4>
+    <div id="div1">div 1</div>
+    <script>
+      document.getElementById("div1").addEventListener("mouseover", sample1);
+      function sample1()
+      {
+        console.log("mouseover");
+        document.getElementById("div1").style.backgroundColor = "darkblue";
+      }
+
+      document.getElementById("div1").addEventListener("mouseout", sample2);
+      function sample2()
+      {
+        console.log("mouseout");
+        document.getElementById("div1").style.backgroundColor = "skyblue";
+      }
+    </script>
+  </body>
+</html>
+
+
