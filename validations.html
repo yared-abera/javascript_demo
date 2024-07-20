@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+    <style>
+      .error
+      {
+        color: red;
+      }
+      #span1,#span2,#span3,#span4,#span5,#span6,#span7,#span8
+      {
+        display: none;
+      }
+      .class1
+      {
+        border: 1px solid red;
+      }
+      .class2
+      {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Validatioms</h4>
+    <form id="form1">
+      Firstname:
+      <input type="text" id="txt1">
+      <span id="span1" class="error">Firstname can't be blank</span>
+      <span id="span5" class="error">Firstname must contain alphabets only</span>
+      <br>
+
+      Lastname:
+      <input type="text" id="txt2">
+      <span id="span2" class="error">Lastname can't be blank</span>
+      <span id="span6" class="error">Lastname must contain alphabets only</span>
+      <br>
+
+      Email:
+      <input type="text" id="txt3">
+      <span id="span3" class="error">Email can't be blank</span>
+      <span id="span7" class="error">Email is invalid</span>
+      <br>
+
+      Amount:
+      <input type="text" id="txt4">
+      <span id="span4" class="error">Amount can't be blank</span>
+      <span id="span8" class="error">Should be between 1000 and 10000</span>
+      <br>
+
+      <input type="submit" value="Register" id="button1">
+    </form>
+    <script src="validations.js"></script>
+  </body>
+</html>
+
+
