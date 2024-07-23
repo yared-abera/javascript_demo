@@ -1,5 +1,5 @@
 //sort - numerical array
-var numericalArray = [ 56, 23, 6, 120, 3, 100 ];
+var numericalArray = [56, 23, 6, 120, 3, 100];
 var sortedNumericalArray = numericalArray.sort(
   (a, b) => {
     return (a - b) * -1;
@@ -8,19 +8,16 @@ var sortedNumericalArray = numericalArray.sort(
 console.log(sortedNumericalArray);
 
 //sort - string array
-var stringArray = [ "Jane", "Allen", "Ford", "Smith", "Doe" ];
+var stringArray = ["Jane", "Allen", "Ford", "Smith", "Doe"];
 var sortedStringArray = stringArray.sort((a, b) => {
   let result;
-  if (a > b)
-  {
+  if (a > b) {
     result = 1;
   }
-  else if (a < b)
-  {
+  else if (a < b) {
     result = -1;
   }
-  else
-  {
+  else {
     result = 0;
   }
   return result * -1;
@@ -41,16 +38,13 @@ console.log(sortedProducts);
 
 var sortedProductsByProductName = products.sort((a, b) => {
   let result;
-  if (a.productName > b.productName)
-  {
+  if (a.productName > b.productName) {
     result = 1;
   }
-  else if (a.productName < b.productName)
-  {
+  else if (a.productName < b.productName) {
     result = -1;
   }
-  else
-  {
+  else {
     result = 0;
   }
   return result * -1;

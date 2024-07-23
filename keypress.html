@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>addEventListener</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h4>keypress</h4>
+    Source text: <input type="text" id="txt1"><br>
+    Destination text: <input type="text" id="txt2"><br>
+    <script>
+      document.getElementById("txt1").addEventListener("keypress", sample);
+      function sample()
+      {
+        var s = document.getElementById("txt1").value;
+        document.getElementById("txt2").value = s;
+      }
+    </script>
+  </body>
+</html>
+
+

@@ -1,6 +1,5 @@
 //forEach
-function increaseQuantity()
-{
+function increaseQuantity() {
   this.quantity++;
 }
 
@@ -12,8 +11,7 @@ var products = [
 ];
 
 //executes the callback for each element
-products.forEach((p) => 
-{
+products.forEach((p) => {
   p.increaseQuantity();
 });
 
