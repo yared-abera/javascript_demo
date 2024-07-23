@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>keypress - alphabets</h4>
+    Name (alphabets): <input type="text" id="txt1">
+    <script>
+      document.getElementById("txt1").addEventListener("keypress", sample);
+      function sample(event)
+      {
+        if ( (event.which >= 65 && event.which <= 90) || (event.which >= 97 && event.which <= 122) || (event.which == 32) || (event.which == 8) )
+        {
+          //no code for accepting
+        }
+        else
+        {
+          event.preventDefault();
+        }
+      }
+    </script>
+  </body>
+</html>
+
