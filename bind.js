@@ -10,8 +10,7 @@ var student2 = {
 };
 
 //function at outside the object
-function calculateTotalMarks(subject1, subject2, subject3)
-{
+function calculateTotalMarks(subject1, subject2, subject3) {
   let totalMarks = subject1 + subject2 + subject3;
   let message = `Hey ${this.studentName}, your total marks is: ${totalMarks}`;
   console.log(message);
