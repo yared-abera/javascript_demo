@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h4>attributes</h4>
+    <img id="myimage" width="200px" height="120px" src="img1.jpg" title="Hello" alt="alternate text">
+    <script>
+      console.log( document.getElementById("myimage").attributes );
+      console.log( document.getElementById("myimage").attributes.length );
+
+      var a = document.getElementById("myimage").attributes;
+      for (var i = 0; i < a.length; i++)
+      {
+        console.log( a[i] );
+      }
+      for (var i = 0; i < a.length; i++)
+      {
+        console.log( a[i].name );
+        console.log( a[i].value );
+      }
+    </script>
+  </body>
+</html>
+
+
